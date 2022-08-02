@@ -14,6 +14,7 @@
 		} else {
 			wordList = words.split('\n');
 		}
+		console.log(wordList);
 	}
 </script>
 
