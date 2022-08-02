@@ -52,7 +52,7 @@
 			</p>
 			<img
 				src="print-instructions.png"
-				alt="a screenshot showing how to set landscape and margins for a printer in chrome"
+				alt="A screenshot showing how to set landscape and margins for a printer in Chrome"
 				class="right-image"
 			/>
 		</div>

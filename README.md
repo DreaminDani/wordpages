@@ -1,18 +1,14 @@
-# create-svelte
+# wordpages
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Make a bunch of pages with words on them
 
-## Creating a project
+## About this project
 
-If you're seeing this, you've probably already done this step. Congrats!
+My partner is a Speech Language Pathologist (SLP) and she needed a way to easily make a large number of words appear on a printed page - as evenly spaced as possible.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+With CSS grid and some magic numbers, this tool does exactly that!
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+![A screenshot showing how to set landscape and margins for a printer in Chrome](static/print-instructions.png)
 
 ## Developing
 
@@ -35,4 +31,4 @@ npm run build
 
 You can preview the production build with `npm run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+> This app is deployed on Netlify at: [wordpages.netlify.app](https://wordpages.netlify.app/)
