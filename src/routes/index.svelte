@@ -1,10 +1,19 @@
 <script>
 	let words = '';
 	let wordList = [''];
+	let isRandom = false;
 
 	function renderWords() {
-		wordList = words.split('\n');
-		console.log(wordList);
+		console.log(isRandom);
+		if (isRandom) {
+			wordList = words
+				.split('\n')
+				.map((value) => ({ value, sort: Math.random() }))
+				.sort((a, b) => a.sort - b.sort)
+				.map(({ value }) => value);
+		} else {
+			wordList = words.split('\n');
+		}
 	}
 </script>
 
@@ -29,6 +38,8 @@
 	<br />
 	<textarea bind:value={words} name="words" cols="20" rows="20" />
 	<br />
+	<input type="checkbox" name="isRandom" bind:checked={isRandom} />
+	<label for="isRandom">Print words in random order</label><br />
 	<p>After you click "Submit", print in landscape on a letter sized paper without any margins</p>
 	<button on:click={renderWords}>Submit</button>
 {/if}
