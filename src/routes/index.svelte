@@ -41,7 +41,7 @@
 	.word {
 		display: inline-block;
 		font-size: 60px;
-		margin-top: 64px;
+		margin-top: 64.5px;
 	}
 	.first {
 		margin-top: 24px;
